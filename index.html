@@ -29,14 +29,22 @@
         <main>
             <!-- BARRE DE RECHERCHES -->
             <section class="section-research">
-                <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="subtitle">En plein centre-ville ou en pleine nature</p>
+                <div class="title-div">
+                    <h1 class="title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                </div>
+                <div class="subtitle-div">
+                    <p class="subtitle">En plein centre-ville ou en pleine nature</p>
+                </div>
+                
                 <form method="get" action="#">
                     <div class="form-research">
                             <i class="fa-solid fa-location-dot"></i> 
                             <input type="search" name="search" id="search" placeholder="Marseille, France">
-                            <button>
+                            <button class="rechercher">
                                 <span>Rechercher</span>
+                            </button>
+                            <button class="loupe">
+                                <i class="fas fa-search"></i>
                             </button>
                     </div>
                 </form>
@@ -45,10 +53,12 @@
             <!-- FILTRES -->
             <section class="filter-container">          
                     <h2 class="filter-title">Filtres</h2>
+                    <div class="filters">
                         <div class="filter economique"><i class="fa-solid fa-money-bill-wave"></i> Économique</div>
                         <div class="filter familiale"><i class="fa-solid fa-person"></i> Familial</div>
                         <div class="filter romantique"><i class="fa-solid fa-heart"></i> Romantique</div>
                         <div class="filter pepites"><i class="fa-solid fa-fire"></i> Nos pépites</div>
+                    </div>
             </section>
 
             <!-- LOGEMENTS DISPONIBLES  -->
@@ -143,13 +153,13 @@
                                 </div>
                             </article>
                         </a>
-                        <!-- AUBERGE DE LA CANEBIERE-->
+                        <!-- AUBERGE CANEBIERE-->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/marcus-loke.jpg" alt="chambre lots superposés fer">
                                 <div class="card-content">
                                     <div class="card-txt">
-                                        <h3 class="card-title">Auberge La Canebière</h3>
+                                        <h3 class="card-title">Auberge Canebière</h3>
                                         <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
                                     </div>
                                     <div class="card-rating">
@@ -220,7 +230,7 @@
                                 </div>
                             </article>
                         </a>
-                        <a href="#">
+                        <a href="">
                             <article class="card">
                                 <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
@@ -265,24 +275,22 @@
 
 
                 <!-- ACTIVITIES -->
-                <section class="activities">
+                <section id="activities">
                     <div class="activities-title">
                         <h2 class="section-title">Activités à Marseille</h2>
                     </div>
-                    <div class="activities-card">
+                    <div class="activities-container">
                         <!-- Vieux Port -->
-                        <a href="#">
+                        <a href="#" class="href-card">
                             <article class="card-activities">
                                 <img src="./images/activites/reno-laithienne.jpg" alt="Image Vieux Port de Marseille">
                                 <div class="card-activities-content">
-                                    <div class="card-activities-txt">
                                         <h3 class="card-activities-title">Vieux Port</h3>
-                                    </div>
                                 </div>
                             </article>
                         </a>
                         <!-- Fort de Pomègues -->
-                        <a href="#"
+                        <a href="#" class="href-card">
                             <article class="card-activities">
                                 <img src="./images/activites/paul-hermann.jpg" alt="Image Fort de Pomègues">
                                 <div class="card-activities-content">
@@ -293,7 +301,7 @@
                             </article>
                         </a>
                         <!-- Parc national des Calanques -->
-                        <a href="#">
+                        <a href="#" class="href-card">
                             <article class="card-activities">
                                 <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image Parc national des Calanques">
                                 <div class="card-activities-content">
@@ -304,7 +312,7 @@
                             </article>
                         </a>
                         <!-- Notre Dame de la Garde -->
-                        <a href="#">
+                        <a href="#" class="href-card">
                             <article class="card-activities">
                                 <img src="./images/activites/florian-wehde.jpg" alt="Image Notre-Dame-de-la-Garde">
                                 <div class="card-activities-content">
@@ -319,18 +327,18 @@
             
         </main>
         <footer class="footer">
-                    <div class="a-propos-footer">
+                    <div class="footer-item">
                         <h3>À Propos</h3>
                         <p>Fonctionnement du site </p>
                         <p>Conditions générales</p>
                         <p>Données et confidentialité</p>
                     </div>
-                    <div class="hebergements-footer">
+                    <div class="footer-item">
                         <h3>Nos Hébergements</h3>
                         <p>Charte qualité</p>
                         <p>Proposer votre hôtel</p>
                     </div>
-                    <div class="assistance-footer">
+                    <div class="footer-item">
                         <h3>Assistance</h3>
                         <p>Centre d'aide</p>
                         <p>Nous contacter</p>
